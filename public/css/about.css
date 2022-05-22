@@ -1,0 +1,34 @@
+.about-main {
+  padding: 15px 15px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.about_heading {
+  text-align: left;
+  color: #dfb163;
+}
+
+.about_heading1 {
+  text-align: left;
+  color: #dfb163;
+  /* margin-left: 10px; */
+}
+
+.about-para {
+  text-align: justify;
+}
+
+.who_we_are {
+  margin-top: 40px;
+  padding: 20px;
+  margin: auto;
+}
+.navbar-brd {
+  position: relative;
+  width: 180px;
+  height: 60px;
+  left: 2px;
+  background-size: contain;
+}

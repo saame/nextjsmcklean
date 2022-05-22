@@ -1,0 +1,125 @@
+.bg-img1 {
+  position: relative;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1615873968403-89e068629265?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
+  padding-top: 70px;
+  background-attachment: fixed;
+  height: 70vh;
+}
+.bg-img1::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background: var(--gray-dark);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.location {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.sqft {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.des {
+  width: 100%;
+  padding: 15px;
+}
+
+.images-grid {
+  margin-bottom: 30px;
+  padding: 30px;
+}
+
+.img-grid {
+  width: 100%;
+}
+
+.work {
+  color: #cc902a;
+}
+.navbar-brd {
+  position: relative;
+  width: 250px;
+  height: 100px;
+  left: 2px;
+  background-size: contain;
+}
+
+/* body {
+  /*   background-color: #222; */
+/* font-family: sans-serif;
+  font-size: 0.8rem;
+  line-height: 150%; */
+/* } */
+
+/* Setting up the responsive Grid container - auto-fit + minmax() */
+
+/* Setting up the responsive Grid container - auto-fit + minmax() */
+.albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 0.5em;
+  margin: -0.5em;
+  margin-top: 10px;
+}
+
+/* Grid inside grid - album cards also use grid for layout setup */
+.album {
+  background: #181818;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 1.5em;
+  border-radius: 1em;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 1.5em;
+  align-items: center;
+  color: white;
+  font-weight: 100;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  line-height: 150%;
+}
+
+/* Important step - image will spill over the container if width is not declared explicitly */
+.album__artwork {
+  width: 100%;
+  border-radius: 0.4em;
+}
+
+/* Some additional text styling */
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.25em;
+  color: #dfb163;
+}
+
+.album__artist {
+  opacity: 0.7;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  font-style: oblique;
+  letter-spacing: 0.7px;
+}
